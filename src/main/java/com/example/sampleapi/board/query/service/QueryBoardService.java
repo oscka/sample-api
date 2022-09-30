@@ -2,13 +2,11 @@ package com.example.sampleapi.board.query.service;
 
 import java.util.List;
 
-import com.example.sampleapi.board.command.domain.Board;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
+
 import com.example.sampleapi.board.query.dto.BoardDto;
 import com.example.sampleapi.board.query.repository.QueryBoardRepository;
-
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
 
