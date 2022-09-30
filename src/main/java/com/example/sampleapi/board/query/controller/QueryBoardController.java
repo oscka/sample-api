@@ -37,7 +37,6 @@ public class QueryBoardController {
 		return queryService.boardSearch(search+"%");
 	}
 
-
 	@GetMapping("/{num}")
 	public BoardDto board(@PathVariable("num") int num) {		
 		BoardDto boardDto = queryService.board(num);

@@ -9,9 +9,9 @@ spring:
   datasource:    
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.167.23.27:3306/blackstar2?autoReconnect=true&useUnicode=true&characterEncoding=utf8
-    username: blackstar2
+    username: root
     password: 1234
-    hikari: 
+    hikari:
       pool-name: hikari-cp
       maximum-pool-size: 30
       minimum-idle: 2
@@ -27,7 +27,9 @@ spring:
         format-sql: true
     hibernate:
         ddl-auto: none    
-
+  redis:
+    host: 127.0.0.1
+    port: 6379
 logging:
   level:  
     com.example.sampleapi: info 
